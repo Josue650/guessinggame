@@ -31,6 +31,7 @@ submit.addEventListener('click', (evt)=>{
         guess = 0;
         if(i == arr.length){
             alert("You have won the game")
+            document.location.reload()
 
     }
         })
