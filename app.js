@@ -28,7 +28,9 @@ submit.addEventListener('click', (evt)=>{
             scoreCount.innerHTML = "You're score is " + score
             randomVal = Math.floor(Math.random() * arr[i])
 
-  
+        guess = 0;
+        if(i == arr.length){
+            alert("You have won the game")
 
     }
         })
