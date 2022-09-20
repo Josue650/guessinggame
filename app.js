@@ -1,24 +1,28 @@
+
+//CACHED DOM NOTES
 const submit = document.getElementById('submit-num-guess')
 const guessed = document.querySelector('.guessed');
 const scoreCount = document.querySelector('.score')
 // const tooMany = document.querySelector('.too-many')
 const arr = [10, 20, 30]
 
-let i = 0;
 
-//Generates a random value
+// Global Vars
+let i = 0;
+// Generates a random value
 let randomVal = Math.floor(Math.random() * arr[i])
 // Score counter
 let score = 0;
 // Number of guesses
 let guess = 1;
 
-//Click event listener to check the number
+// Click event listener to check the number
 submit.addEventListener('click', (evt)=>{
 
 
     let guessedVal = document.getElementById('guess-input').value;
 
+    // Functions
     if(guessedVal == randomVal){ // Check if the number entered is equal to the target value
         guessed.innerHTML = "You guessed the number right! Only took " + guess + " guesses" + "<button id='round'>Next Round</button>" // Adds message to the screen
         // Event Click when you move on to the next round click the button
