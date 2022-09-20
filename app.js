@@ -3,10 +3,11 @@ const guessed = document.querySelector('.guessed');
 const scoreCount = document.querySelector('.score')
 // const tooMany = document.querySelector('.too-many')
 const arr = [10, 20, 30]
-//Generates a random value
-let i = 0;
-let randomVal = Math.floor(Math.random() * arr[i])
 
+let i = 0;
+
+//Generates a random value
+let randomVal = Math.floor(Math.random() * arr[i])
 // Score counter
 let score = 0;
 // Number of guesses
@@ -20,32 +21,45 @@ submit.addEventListener('click', (evt)=>{
 
     if(guessedVal == randomVal){ // Check if the number entered is equal to the target value
         guessed.innerHTML = "You guessed the number right! Only took " + guess + " guesses" + "<button id='round'>Next Round</button>" // Adds message to the screen
+        // Event Click when you move on to the next round click the button
         document.getElementById('round').addEventListener('click', (evt) => {
             i++
             document.getElementById('max-value').innerHTML = arr[i]
             guessed.innerHTML = ''
+        // Keeps track of the score
             score++
             scoreCount.innerHTML = "You're score is " + score
+        // Random value generated between the game levels ex.. 0 - 10 /0 - 20/0 - 30
             randomVal = Math.floor(Math.random() * arr[i])
 
+        // Resets guesses after every round
         guess = 0;
+        // Condition if the game is won
         if(i == arr.length){
             alert("You have won the game")
             document.location.reload()
 
     }
         })
-    } else if (guessedVal > randomVal) { // Check if the number is greater than target value
-        guess++; // Increment count after every guess
+        // Check if the number is greater than target value
+    } else if (guessedVal > randomVal) {
+        // Increment count after every guess
+        guess++;
+
+         // Message displayed when the number is too small
         guessed.innerHTML = "No no no try again number is too big"
-        if(guess > 3){
+        // Condition if guess exeeded 5 guesses
+        if(guess > 5){
             alert('You took too many guesses. You have lost!')
             document.location.reload()
         }
     } else {
-        guess++; // Increment count after every guess
+        // Increment count after every guess
+        guess++;
+        // Message displayed when the number is too small
         guessed.innerHTML = "No no no try again number is too small"
-        if(guess > 3){
+        // Condition if guess exeeded 5 guesses
+        if(guess > 5){
             alert('You took too many guesses. You have lost!')
             document.location.reload()
         }
