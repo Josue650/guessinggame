@@ -1,3 +1,4 @@
+
 //CACHED DOM NOTES
 const submit = document.getElementById('submit-num-guess')
 const guessed = document.querySelector('.guessed');
@@ -23,22 +24,16 @@ submit.addEventListener('click', (evt)=>{
     let guessedVal = document.getElementById('guess-input').value;
 
     // Functions
-    // Check if the number entered is equal to the target value
-    if(guessedVal == randomVal){
-
-        // Adds message to the screen
-        guessed.innerHTML = "You guessed the number right! Only took " + guess + " guesses" + "<button id='round'>Next Round</button>"
-
+    if(guessedVal == randomVal){ // Check if the number entered is equal to the target value
+        guessed.innerHTML = "You guessed the number right! Only took " + guess + " guesses" + "<button id='round'>Next Round</button>" // Adds message to the screen
         // Event Click when you move on to the next round click the button
         document.getElementById('round').addEventListener('click', (evt) => {
             i++
             document.getElementById('max-value').innerHTML = arr[i]
             guessed.innerHTML = ''
-
         // Keeps track of the score
             score++
             scoreCount.innerHTML = "You're score is " + score
-            
         // Random value generated between the game levels ex.. 0 - 10 /0 - 20/0 - 30
             randomVal = Math.floor(Math.random() * arr[i])
 
@@ -50,7 +45,7 @@ submit.addEventListener('click', (evt)=>{
             document.location.reload()
 
     }
-})
+        })
         // Check if the number is greater than target value
     } else if (guessedVal > randomVal) {
         // Increment count after every guess

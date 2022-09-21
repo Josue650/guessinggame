@@ -13,7 +13,6 @@ h3{
     color: rgb(245, 242, 242);
 }
 p{
-    font-size: x-large;
     color: rgb(245, 242, 242);
 }
 .form{
@@ -21,7 +20,4 @@ p{
 }
 .score{
     color: rgb(245, 242, 242);
-}
-.type-guess{
-    font-size: x-large;
 }
