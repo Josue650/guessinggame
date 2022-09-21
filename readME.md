@@ -1,6 +1,5 @@
 ## Ridlers Guessing Game
-/Users/toosh23/Desktop/software_homework/unit_1/guessinggame/images/Screen Shot 2022-09-20 at 5.29.52 PM.png
-
+<img width="1440" alt="Screen Shot 2022-09-20 at 5 29 52 PM" src="https://user-images.githubusercontent.com/99029058/191502900-cde22433-b138-4628-8ea1-341b42988f58.png">
 
 ## Inspiration for Game
 Its a bit nerdy but in school my best subject was math and we had a bunch of number guessing game battles. So that was something that resonate with me as kid
