@@ -1,3 +1,7 @@
+## Ridlers Guessing Game
+url(images/Screen Shot 2022-09-20 at 5.29.52 PM.png);
+
+
 ## Inspiration for Game
 Its a bit nerdy but in school my best subject was math and we had a bunch of number guessing game battles. So that was something that resonate with me as kid
 
