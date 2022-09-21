@@ -1,3 +1,8 @@
+## Inspiration for Game
+Its a bit nerdy but in school my best subject was math and we had a bunch of number guessing game battles. So that was something that resonate with me as kid
+
+
+## Rules for Game
 -The game is built of 3 diffrent  levels.
 
 -The user has 3 chances to guess the number.
