@@ -1,5 +1,5 @@
 ## Ridlers Guessing Game
-url(images/Screen Shot 2022-09-20 at 5.29.52 PM.png);
+/Users/toosh23/Desktop/software_homework/unit_1/guessinggame/images/Screen Shot 2022-09-20 at 5.29.52 PM.png
 
 
 ## Inspiration for Game

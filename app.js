@@ -36,9 +36,9 @@ submit.addEventListener('click', (evt)=>{
             guessed.innerHTML = ''
 
         // Keeps track of the score
-            score++
+            score++ 
             scoreCount.innerHTML = "You're score is " + score
-            
+
         // Random value generated between the game levels ex.. 0 - 10 /0 - 20/0 - 30
             randomVal = Math.floor(Math.random() * arr[i])
 
